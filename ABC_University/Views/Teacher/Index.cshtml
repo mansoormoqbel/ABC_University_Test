@@ -1,0 +1,49 @@
+﻿@model List<ABC_University.Models.Teacher>
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Room Index</h2>
+
+<div class="container">
+    <div class="well well-sm">
+        <strong>Display</strong>
+        <div class="btn-group">
+            <a href="#" id="list" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-th-list">
+                </span>List
+            </a> <a href="#" id="grid" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-th"></span>Grid
+            </a>
+        </div>
+    </div>
+    <div id="products" class="row list-group">
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th>ID Teacher</th>
+                    <th>Name Teacher</th>
+                    <th>Numbrer Teacher</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+
+
+
+                    <tr>
+                        <th scope="row">@item.teacherID</th>
+                        <td>@item.teacherName</td>
+                        <td>@item.teacherNumber</td>
+
+                    </tr>
+
+
+
+
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

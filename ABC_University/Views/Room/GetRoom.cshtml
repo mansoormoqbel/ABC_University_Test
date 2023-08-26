@@ -1,0 +1,31 @@
+﻿@model ABC_University.Models.room
+@{
+    ViewBag.Title = "GetRoom";
+}
+
+<h2>GetRoom</h2>
+<div class="container">
+    <form class="row g-3">
+        <div class="col-md-12">
+            <label for="inputEmail4" class="form-label">Room Name</label>
+            <input type="text" class="form-control" id="name" name="name" value="@Model.roomName">
+        </div>
+        <div class="col-md-12">
+            <label for="inputPassword4" class="form-label">Room Size</label>
+            <input type="text" class="form-control" id="size" name="size" value="@Model.roomSize">
+        </div>
+        <div class="col-md-12">
+            <label for="Room_Location" class="form-label">Room Location</label>
+            <input type="text" class="form-control" id="Room_Location" name="Room_Location"  value="@Model.location">
+        </div>
+        
+        
+        
+        
+        
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+    </form>
+</div>
+
